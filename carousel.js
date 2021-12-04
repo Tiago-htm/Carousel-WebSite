@@ -6,7 +6,8 @@ const prevButton = document.querySelector('[data-js="carousel__button--prev"]')
 let currentCarouselIndex = 0;
 
 nextButton.addEventListener('click',() => {
-  if(currentCarouselIndex === carousel.length -1 ){
+  
+  if(currentCarouselIndex === carousel.length -1  ){
     currentCarouselIndex = 0
   } else{
     currentCarouselIndex++
@@ -33,3 +34,5 @@ prevButton.addEventListener('click', () => {
   })
   carousel[currentCarouselIndex].classList.add('carousel--visible')
 })
+
+

@@ -1,26 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE  html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sytle.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
   <title>STRAUP</title>
 </head>
 <body>
  <header>
-  <nav class="menu">
-    <ul class="navegation">
-      <li>Home</li>
-      <li>Quem somos?</li>
-      <li>Produtos</li>
-      <li>Contatos</li>
-    </ul>
-   </nav>
     <div class="carousel">
       <div data-js ="carousel__img" class = "carousel__img  carousel--visible">
               <img src = "imagens/home.jpg"/>
@@ -42,70 +30,39 @@
       </button>
     </div>
   </div>
-  <nav class="menu-fixo">
-    <ul class="navegation">
-      <li>Home</li>
-      <li>Quem somos?</li>
-      <li>Produtos</li>
-      <li>Contatos</li>
-    </ul>
-   </nav>
-   
-</header>
-<section class= "quem-somos">
-  <div class="quem-titulo">
-    <h2 class= "title-section">Quem somos?</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa, voluptatibus quas ex quod esse officia corporis sapiente eaque. Nisi delectus id hic odit sed numquam placeat! Omnis, minima facilis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in harum, facere, architecto tempora maxime hic provident repudiandae, at atque pariatur iste laborum voluptatem ipsum distinctio. Corporis neque esse repellendus.</p>
-  </div>
-  <div class ="img-quem">
-    <img src="imagens/quem.jpg" alt="foto de um gato lindo">
-  </div>
+  </header>
   
+<section class= "store">
+  <div class= "store-carousel">
+    <div data-js="store-img" class="store-img store-img-visible">
+      <img src="imagens/welcome_two.jpg" alt="">
+    </div> 
+    <div data-js="store-img" class="store-img store-img-visibleOne">
+      <img src="imagens/quem.jpg" alt="">
+    </div> 
+    <div data-js="store-img" class="store-img store-img-visibleTwo">
+      <img src="imagens/lop.jpeg" alt="">
+    </div> 
+    <div data-js="store-img" class="store-img" >
+      <img src= "imagens/home.jpg" alt="">
+    </div> 
+    <div data-js="store-img" class="store-img" >
+      <img src="imagens/welcome.jpg" alt="">
+    </div> 
+    <div class="carousel__actions">
+      <button data-js="store__button--prev" aria-label="Slide anterior" >
+        <
+      </button>
+
+      <button data-js="store__button--next" aria-label="Próximo slide">
+        >
+      </button>
+    </div>  
+   
+</div> 
 </section>
-<section classs = "store">
-      <div class= "store-title">
-            <h2 class= "title-section">Loja</h2>
-      </div>
-    <div class = "store-carousel">
-          <div     data-js = "store__image" class="store__image store__image--visible" >
-             <img src="imagens/produto5.png" alt="produto 1">
-            
-          </div>
-
-          <div  data-js = "store__image" class="store__image store__image--visible" >
-            <img src="imagens/produto2.jpeg" alt="produto 2">
-          </div>
-
-          <div     data-js = "store__image" class="store__image store__image--visible" >
-            <img src="imagens/produto3.jpg" alt="produto 3">
-          </div>
-
-          <div data-js="store__image" class="store__image">
-            <img src="imagens/produto4.jpg" alt="peoduto 4">
-          </div>
-
-          <div data-js="store__image" class="store__image">
-            <img src="imagens/produto5.png" alt="peoduto 5">
-          </div>
-
-          <div data-js="store__image" class="store__image">
-            <img src="imagens/produto6.gif" alt="peoduto 6">
-          </div>
-
-          <div data-js="store__image" class="store__image">
-            <img src="imagens/produto7.png" alt="peoduto 7">
-          </div>
-          <div class="carousel__actions">
-              <button data-js="carousel__button--prev" >
-                <
-              </button>
-                <button data-js="carousel__button--next">
-                >
-              </button>
-          </div>
-    </div>
-</section>
-  <script src = "./carousel.js"></script>
-  <script src = "store-carousel.js"></script>
+<script src="carousel.js"></script>
+<script src="storeCarousel.js"></script>
 </body>
+
 </html>

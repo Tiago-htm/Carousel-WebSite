@@ -1,15 +1,15 @@
-*{
+ * {
   margin:0rem;
   padding: 0rem;
   list-style: none;
   text-decoration: none;
 }
 header{
-  height: 50vh;
+  height: 100vh;
 }
 .carousel {
   width: 100%;
-  height: 45vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
  
@@ -40,6 +40,7 @@ header{
  }
 .carousel .carousel__actions{
   top:50%;
+ 
 }
  .carousel__actions{
   position: absolute;
@@ -75,120 +76,63 @@ header{
   
 }
 /* ----------------------------------------------------------------------*/
-.menu {
+.store{
   width: 100%;
-  height: 5vh;
-  background-color:rgba(255, 255, 255, 0.1);
-  position: fixed;
-}
-
-.navegation li {
-  display: inline;
-  font-size: 1.3rem;
-  margin-right: 5rem;
-  margin-left: 5rem;
-  text-align: center;
-  cursor: pointer;
-  color: black;
+  height: 100vh;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  
   
 }
-.navegation li:hover{
-  color: rgb(255, 255, 255);
-}
-.menu-fixo {
-  width: 100%;
-  height: 5vh;
-  background-color:rgb(44, 160, 40);
+.store-carousel{
+  width:100%;
+  height:100%;
   position: relative;
-}
-.quem-somos{
- width: 100%;
- height: 50vh;
- position: relative;
-}
-.quem-titulo{
-  margin-right: 50%;
- 
-}
-.title-section{
-  font-size: 3rem;
   display: flex;
-  position:relative;
-  margin-left: 2rem;
-  color: rgb(6, 51, 6);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.quem-titulo p{
-font-size: 1.5rem;
-object-fit: cover;
-position: relative;
-}
-.img-quem {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  margin-left: 50%;
-  margin-top: -18.2rem;
-}
-.img-quem img{
- width: 100%;
- height: 100%;
- border-radius: 2rem;
-}
-/*-------------------------------------------------------------------------------------*/
-.store{
-    width: 100%;
-    height: 80vh;
-    background-color: grey;
+
 }
 
-.store_carousel{
-  width: 100%;
-  height: 20vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.store__image{
+.store-img{
   display: none;
+
 }
 
-.store__image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.store__image img{
-  object-fit: cover;
-  width: 100%;
+.store-img-visibleOne{
+   width: 30%;
+   display: block;
+   overflow:hidden;
+   margin: 20% 2% 0 4%;
+   height: 50%;
 }
 
-.store__image--visible{
- display: grid;
- grid-template-columns: repeat(16,1fr);
- grid-template-rows: repeat(6,6rem);
- animation:storeImageVisible 0.5;
- row-gap: .5rem;
- object-fit: cover;
+.store-img-visible{
+   width: 30%;
+   display: block;
+   overflow:hidden;
+   margin: 20% 2% 0 2%;
+   height: 50%;
+   
 }
-.store__image--visible:nth-child(1){
-  grid-column: 4/ 7;
-  grid-row: 3/ 5;
+.store-img-visibleTwo{
+    width: 30%;
+    height: 50%;
+   display: block;
+   overflow:hidden;
+   margin: 20% 2% 0 2%;
+  
 }
-@keyframes storeImageVisible{
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-    animation:  opacity linear;
-  }
+
+.carousel__actions button[data-js="store__button--prev"] {
+  margin-top: 77%;
+  margin-left:5%;
+  
+  
+
 }
-.store-carousel .carousel__actions button[data-js="carousel__button--prev"]{
-  margin-left: 2rem;
+
+ .carousel__actions button[data-js="store__button--next"] {
+  margin-top: 77%;
+  margin-right: 3%;
+  
 }
-.store-carousel .carousel__actions button[data-js="carousel__button--next"]{
-  margin-right: 2rem;
-}
- 
- 
